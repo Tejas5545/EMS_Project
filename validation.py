@@ -10,7 +10,7 @@ class validation:
             return False
     
     def validateemail(self,eml):
-        pattern =re.compile(r'\d[10]')
+        pattern =re.compile(r'[\w\.-]+@[\w\.-]+')
         if(pattern.match(mob)):
             return True
         else:
